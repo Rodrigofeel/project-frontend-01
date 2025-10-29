@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Bebas_Neue, Fredoka } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,8 +12,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const bebas = Bebas_Neue({
+  variable: "--font-bebas",
+   weight: "400",
+  subsets: ["latin"],
+});
+
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
+   weight: "400",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "marua resort",
+  title: "Roots",
   description: "this is my portifolio",
 };
 
@@ -25,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bebas.variable} ${fredoka.variable} antialiased`}
       >
         {children}
       </body>
