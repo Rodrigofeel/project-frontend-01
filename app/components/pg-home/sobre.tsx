@@ -1,46 +1,41 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
-export default function SobreSection() {
+export default function HomeSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!sectionRef.current || !textRef.current) return;
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start end', 'end start'],
+  });
 
-      const sectionTop = sectionRef.current.offsetTop;
-      const sectionHeight = sectionRef.current.offsetHeight;
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
+  // Camadas de fundo com diferentes velocidades
+  const bgLayer1Y = useTransform(scrollYProgress, [0, 1], [0, -20]); // mais lento
 
 
 
-      if (scrollY + windowHeight > sectionTop && scrollY < sectionTop + sectionHeight) {
+  return (
+    <section
+      ref={sectionRef}
+      className="w-full min-h-[90vh] py-24 bg-[#fff7ef] px-6 relative overflow-hidden">
 
-        const progress = (scrollY - sectionTop + windowHeight) / (windowHeight + sectionHeight);
-        const offset = progress * 20;
-        textRef.current.style.transform = `translateY(${-offset}px)`;
-      }
-    };
+ <motion.div
+        style={{ y: bgLayer1Y }}
+        className="absolute top-10 -left-16 w-72 h-72 rounded-full -z-10"
+        aria-hidden="true"
+      />
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-
-    return (
-        <section className="h-auto w-full py-24 pt-48 bg-[#F6E7D7]  px-6 overflow-hidden relative " >
-            <div ref={textRef} className='transition-transform duration-300'>
-              <p className="px-20">O que fazemos</p>
-              <h1 className="text-3xl font-bold max-w-3xl mb-8 text- left px-20 ">
-               A Roots oferece chalés integrados à natureza, proporcionando momentos
-               de descanso e reconexão com a mãe natureza. Cada detalhe é pensado para
-               unir conforto e harmonia natural.
-              </h1>
-            </div>
-</section>
-    )
+      <div className="max-w-3xl mx-10 ">
+        <p className="px-6 md:px-20 text-lg">O que fazemos</p>
+        <h1 className="text-3xl md:text-4xl font-bold mb-8 text-left px-6 md:px-20">
+          A Roots oferece chalés integrados à natureza, proporcionando momentos
+          de descanso e reconexão com a mãe natureza. Cada detalhe é pensado para
+          unir conforto e harmonia natural.
+        </h1>
+      </div>
+    </section>
+  );
 }

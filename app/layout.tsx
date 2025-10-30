@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-[#F6E7D7] ${geistSans.variable} ${geistMono.variable} ${bebas.variable} ${fredoka.variable} antialiased`}
+        className={` ${geistSans.variable} ${geistMono.variable} ${bebas.variable} ${fredoka.variable} antialiased`}
       >
         {children}
       </body>

@@ -51,7 +51,7 @@ useEffect(() => {
               <p className="text-lg mb-8">
                  Chalés e natureza em perfeita harmonia.
               </p>
-              <button className="cursor-pointer bg-[#5C4033] text-[#F6E7D7] px-6 py-3 rounded-xl hover:bg-[#211105] transition">
+              <button className="cursor-pointer bg-[#5C4033] text-[#ffffff] text-bold px-6 py-3 rounded-xl hover:bg-[#211105] transition">
                Reservar
               </button>
         </div>
