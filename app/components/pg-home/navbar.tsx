@@ -26,7 +26,7 @@ export default function Navbar() {
 
 
     return (
-        <nav className={`fixed top-0 left-0 w-full rounded-b-3xl z-20 bg-[#F6E7D7] transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
+        <nav className={`fixed top-0 left-0 w-full rounded-b-3xl z-50 bg-[#F6E7D7] transition-transform duration-10 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
 
          <div className="max-w-7xl mx-auto px-17 py-7 flex items-center justify-center">
 
