@@ -19,9 +19,9 @@ export default function AcomodacaoSection() {
         offset: ["start start", "end end"]
     })
 
-    const y1 = useTransform(scrollYProgress, [0.10, 0.90], ["0px", "1000px"]);
-    const y2 = useTransform(scrollYProgress, [0, 0.60], ["-300px", "1000px"]);
-    const y3 = useTransform(scrollYProgress, [0.10, 0.90], ["-100px", "150px"]);
+    const y1 = useTransform(scrollYProgress, [0.10, 0.90], ["0px", "890px"]);
+    const y2 = useTransform(scrollYProgress, [0.10, 0.90], ["-325px", "580px"]);
+    const y3 = useTransform(scrollYProgress, [0.10, 0.97], ["-840px", "160px"]);
 
 
     return(
