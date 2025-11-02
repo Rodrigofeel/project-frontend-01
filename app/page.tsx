@@ -6,7 +6,7 @@ import ServicoSection from "./components/pg-home/serviços";
 
 export default function Home() {
   return (
-    <main className="bg-[#fff7ef]">
+    <main className="bg-[#fff7ef] shadow-[0_-10px_30px_-10px_rgba(0,0,0,0.3)]">
       <Navbar/>
       <HomeSection/>
       <SobreSection/>

@@ -25,12 +25,12 @@ export default function AcomodacaoSection() {
 
 
     return(
-       <section ref={ref} className="relative w-full h-[300vh] itemns-center">
-        <h1 className="text-5xl font-bold text-center drop-shadow-lg py-16 text-[#211105]">Hospede-se em harmonia com a natureza</h1>
+       <section ref={ref} className="relative w-full h-[300vh] bg-[#fff7ef]">
+        <h1 className="text-5xl font-bold text-center drop-shadow-lg py-16 text-[#211105] ">Hospede-se em harmonia com a natureza</h1>
         <div>
 
             {/* acomodação 1 */}
-            <div className="relative h-[500px] w-full overflow-hidden">
+            <div className="relative h-[500px] w-full overflow-hidden ">
                 <div className="absolute inset-0 bg-black/15 z-30"> </div>
                 <Image
                 src={imgacm01}
@@ -39,7 +39,7 @@ export default function AcomodacaoSection() {
                 className="object-cover"
                 priority
                 />
-                <motion.div style={{y: y1}} className="absolute left-25 bottom-20 w-[35%] h-[320px] rounded-xl overflow-hidden shadow-2xl z-30">
+                <motion.div style={{y: y1}} className="absolute left-25 bottom-20 w-[35%] h-80 rounded-xl overflow-hidden shadow-2xl z-30">
                 <Image
                 src={imgacmbed02}
                 alt="acomodacao-bed-01"
@@ -61,7 +61,7 @@ export default function AcomodacaoSection() {
                 className="object-cover"
                 priority
                 />
-                <motion.div style={{ y: y2}} className="relative left-25 bottom-20 w-[35%] h-[320px] rounded-xl overflow-hidden shadow-2xl z-30">
+                <motion.div style={{ y: y2}} className="relative left-25 bottom-20 w-[35%] h-80 rounded-xl overflow-hidden shadow-2xl z-30">
                 <Image
                 src={imgacmbed01}
                 alt="acomodacao-bed-02"
@@ -83,7 +83,7 @@ export default function AcomodacaoSection() {
                 className="object-cover"
                 priority
                 />
-                <motion.div style={{y: y3}} className="relative left-25 bottom-20 w-[35%] h-[320px] rounded-xl overflow-hidden shadow-2xl z-30">
+                <motion.div style={{y: y3}} className="relative left-25 bottom-20 w-[35%] h-80 rounded-xl overflow-hidden shadow-2xl z-30">
                 <Image
                 src={imgacmbed04}
                 alt="acomodacao-bed-04"
