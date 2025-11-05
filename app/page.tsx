@@ -7,14 +7,13 @@ import FooterSection from "./components/pg-home/footer";
 
 export default function Home() {
   return (
-    <main className="bg-[#fff7ef] shadow-[0_-10px_30px_-10px_rgba(0,0,0,0.3)]">
+    <main className="bg-[#fff7ef]">
       <Navbar/>
       <HomeSection/>
       <SobreSection/>
       <AcomodacaoSection/>
-      <ServicoSection />
-      <FooterSection />
-
+      <ServicoSection/>
+      <FooterSection/>
     </main>
   );
 }

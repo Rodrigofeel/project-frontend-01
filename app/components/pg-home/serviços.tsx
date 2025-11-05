@@ -10,7 +10,7 @@ import imglivre01 from '../../../public/img-livre-01.jpg'
 export default function ServicoSection() {
 
     return(
-        <section className="bg-[#fff7ef] w-full relative z-50 mt-[-90px] h-[300vh] shadow-[0px_0px_40px_0px_rgba(0,0,0,0.9)] px-6 py-44">
+        <section className="bg-[#fff7ef] w-full relative z-50 mt-[-90px] h-[250vh] shadow-[0px_0px_40px_0px_rgba(0,0,0,0.9)] px-6 py-44">
 
                 <h1 className="text-center md:text-5xl force-lora text-[#93804f] mb-12">Tudo o Que Preparamos Para Você</h1>
 
