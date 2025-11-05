@@ -1,9 +1,52 @@
 @import "tailwindcss";
 
+/* condigo abaixo temporario, fazer a manuteção */
+.force-bebas {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+
+.force-fredoka {
+  font-family: 'Fredoka', sans-serif !important;
+}
+
+.force-saira {
+  font-family: 'Saira Condensed', sans-serif !important;
+}
+
+.force-mono {
+  font-family: 'Geist Mono', sans-serif !important;
+}
+
+.force-inter {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.force-montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.force-raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.force-lora {
+  font-family: 'Lora', sans-serif !important;
+}
+
+.force-abril {
+  font-family: 'Abril Fatface', sans-serif !important;
+}
+
+.force-garamond {
+  font-family: 'Cormorant Garamond', sans-serif !important;
+  font-size: 3.50rem;
+}
+
 
     html, body{
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }

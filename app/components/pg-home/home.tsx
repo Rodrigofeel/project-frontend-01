@@ -47,11 +47,11 @@ useEffect(() => {
              <div
              ref={parallaxContentRef}
              className="relative flex flex-col items-center justify-center h-full mt-70  z-20 px-4 text-center">
-              <h1 className="text-5xl font-bold mb-4">Bem-vindo à Roots</h1>
-              <p className="text-lg mb-8">
+              <h1 className="text-5xl font-bold force-inter mb-4">Bem-vindo à Roots</h1>
+              <p className="text-lg mb-8 ">
                  Chalés e natureza em perfeita harmonia.
               </p>
-              <button className="cursor-pointer bg-[#3B2B1F] text-[#ffffff] text-bold px-6 py-3 rounded-xl hover:bg-[#211105] transition">
+              <button className="cursor-pointer bg-[#93804f] text-[#ffffff] text- px-6 py-3 rounded-xl hover:bg-[#5C5032] transition ">
                Reservar
               </button>
         </div>

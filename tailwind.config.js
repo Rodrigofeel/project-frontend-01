@@ -8,16 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-         colors: {
-        primeira: "#2F855A",
-        segunda: "#68D391",
-        terceira: "#8B5E3C",
-        quarta: "#F6E7D7",
-        quinta: "#4A5568",
-        sexta: "#5C4033",
-      },
       fontFamily: {
-        logo: ["var(--font-bebas)"],
+        bebas: ['var(--font-bebas)', 'sans-serif'],
+        saira: ['var(--font-saira)', 'sans-serif'],
+        fredoka: ['var(--font-fredoka)', 'sans-serif'],
       },
     },
   },
