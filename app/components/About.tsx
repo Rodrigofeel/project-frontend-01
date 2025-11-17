@@ -1,16 +1,7 @@
-'use client';
-
- export default function HomeSection() {
+ export default function About() {
   return (
     <section
-// ref={sectionRef}
-      className="w-full min-h-[90vh] py-24 bg-[#fff7ef] px-6 relative overflow-hidden ">
-
- {/* <motion.div
-        style={{ y: bgLayer1Y }}
-        className="absolute top-10 -left-16 w-72 h-72 rounded-full -z-10"
-        aria-hidden="true"
-      /> */}
+      className="w-full min-h-[90vh] py-24 bg-[#fff7ef] px-6 relative overflow-hidden shadow-[0px_-10px_8px_1px_rgba(0,0,0,0.3)] ">
 
       <div className="max-w-3xl mx-10 ">
         <p className="px-6 md:px-20 text-lg">O que fazemos</p>

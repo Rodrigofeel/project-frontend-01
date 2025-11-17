@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="bg-[#5C5032]">
+    <html lang="pt-BR">
       <body
         className={` ${bebas.variable} ${saira.variable} ${inter.variable} ${lora.variable} antialiased`}
       >

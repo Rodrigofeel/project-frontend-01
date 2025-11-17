@@ -18,9 +18,18 @@
 }
 
 html, body {
-        scroll-behavior: none;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
 
+
+@layer utilities {
+  .accommodation-imgbed {
+    @apply relative left-25 bottom-20 w-[35%] h-80 rounded-xl overflow-hidden z-20 will-change-transform;
+  }
+
+  .accommodation-img {
+    @apply relative h-[500px] w-full overflow-hidden;
+  }
 }

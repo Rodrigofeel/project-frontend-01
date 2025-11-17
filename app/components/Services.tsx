@@ -1,18 +1,15 @@
 'use client';
 
 import Image from "next/image"
-
 import imglivre01 from '../../../public/img-livre-01.jpg'
-
-
-
 
 export default function ServicoSection() {
 
     return(
-        <section className="bg-[#fff7ef] w-full relative z-50 mt-[-90px] h-[250vh] shadow-[0px_0px_40px_0px_rgba(0,0,0,0.9)] px-6 py-44">
+        <section
+         className="bg-[#fff7ef] z-10 shadow-[0px_0px_40px_0px_rgba(0,0,0,0.9)] px-3 py-50">
 
-                <h1 className="text-center md:text-5xl force-lora text-[#93804f] mb-12">Tudo o Que Preparamos Para Você</h1>
+            <h1 className="text-center md:text-5xl force-lora text-[#93804f] mb-12">Tudo o Que Preparamos Para Você</h1>
 
 
             <div className="grid  md:grid-cols-3 gap-8 h-[80vh]">
@@ -33,7 +30,6 @@ export default function ServicoSection() {
                 <div className=" rounded-2xl bg-white p-8 shadow-sm  border border-gray-100 flex flex-col items-center text-left">
                      <h2 className="text-2xl font-bold force-lora mb-20">Terapias naturais</h2>
                      <p  className=" text-base leading-relaxed max-w-prose mb-4 font-semibold">Inspiradas pelo entorno natural que nos cerca, nossas terapias foram criadas para harmonizar corpo, mente e ambiente. Cada sessão é uma jornada suave rumo ao equilíbrio interior, convidando você a respirar fundo, soltar tensões e redescobrir o bem-estar mais profundo.</p>
-
                 </div>
 
             </div>
@@ -47,6 +43,7 @@ export default function ServicoSection() {
                     priority
                     />
             </div>
+
         </section>
     )
 }
